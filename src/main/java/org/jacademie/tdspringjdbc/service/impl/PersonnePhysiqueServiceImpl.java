@@ -25,6 +25,15 @@ public class PersonnePhysiqueServiceImpl implements PersonnePhysiqueService {
 		
 		this.personnePhysiqueDao.createPersonnePhysique(personnePhysique);
 	}
+	
+	@Override
+	public void createPersonnePhysiques(Collection<PersonnePhysique> personnePhysiques) {
+		
+		for (PersonnePhysique personnePhysique : personnePhysiques) {
+			
+			this.createPersonnePhysique(personnePhysique);
+		}
+	}
 
 	@Override
 	public Collection<PersonnePhysique> findAllPersonnePhysiques() {

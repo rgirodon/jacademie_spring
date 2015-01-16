@@ -10,5 +10,7 @@ public interface PersonnePhysiqueService {
 	
 	public void createPersonnePhysique(PersonnePhysique personnePhysique);
 	
+	public void createPersonnePhysiques(Collection<PersonnePhysique> personnePhysiques);
+	
 	public Collection<PersonnePhysique> findAllPersonnePhysiques();
 }
