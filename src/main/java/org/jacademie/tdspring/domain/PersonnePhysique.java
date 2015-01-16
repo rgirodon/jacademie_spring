@@ -78,6 +78,7 @@ public class PersonnePhysique {
 	
 	public PersonnePhysique(Long id, String nrc, String nomUsage, String prenom) {
 		this(nrc, nomUsage, prenom);
+		this.id = id;
 	}
 
 	public Long getId() {
