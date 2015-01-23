@@ -35,7 +35,7 @@ public class AppAutoWiredHibernate
     	logger.info("Calling service...");
     	
     	Student student = new Student();
-    	student.setName("Prenom2 Nom2");
+    	student.setName("Prenom3 Nom3");
     	service.createStudent(student);
     	
     	logger.info("Service called.");
